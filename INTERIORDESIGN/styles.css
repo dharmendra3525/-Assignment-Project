@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #00647e;
+}
+.container {
+  width: 88%;
+  height: 95vh;
+  margin: auto;
+  margin-top: 15px;
+  background-image: url(./Background.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 3px black;
+}
+.navbar {
+  width: 80%;
+  height: 15vh;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 47px;
+  box-shadow: 0 0 1px black;
+  background-color: #00647e69;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.navbar .logo {
+  margin-right: 200px;
+}
+.navbar .logo h3 {
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+  letter-spacing: 3px;
+  padding-left: 25px;
+}
+.navbar ul {
+  margin-right: 90px;
+}
+.navbar ul a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 1px 3px black;
+}
+.left-side {
+  width: 30%;
+  height: 95vh;
+  box-shadow: 0 0 5px black;
+  position: fixed;
+}
+.left-side h3 {
+  margin-top: 230px;
+  margin-left: 100px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 5px black;
+}
+.left-side h1 {
+  margin-left: 90px;
+  font-size: 136px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.left-side p {
+  margin-left: 100px;
+  letter-spacing: 3px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+}
+#btn {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+#btn button {
+  width: 200px;
+  height: 32px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 3px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn button:hover {
+  background-color: white;
+  box-shadow: 0 0 5px white, 0 0 20px white, 0 0 60px white, 0 0 160px white;
+}
+.right-side {
+  width: 60%;
+  height: 33vh;
+  float: right;
+  margin-top: 400px;
+  margin-right: 9px;
+}
+.box {
+  margin-left: 27px;
+  margin-top: 95px;
+}
+.box i {
+  margin-left: 5px;
+}
+.box i img {
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.box i img:hover {
+  transform: translatey(-10px);
+}
