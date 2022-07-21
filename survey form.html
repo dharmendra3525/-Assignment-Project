@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Survey Form</title>
+    <style>
+        *{
+    color:black;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    display:block;
+    background: url("Tree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    /* padding-left: 30%; */
+}
+.container{
+    width: 450px;
+    margin: 20px auto;
+    /* height: 100vw; */
+    border: 3px solid rgb(93, 219, 244);
+    padding-left: 40px;
+    padding-bottom: 18px ;
+    align-self: center;
+    opacity: 2.0;
+    
+}
+.item{
+    width: 410px;
+}
+input[type='text']{
+    text-align: center;
+}
+input[type='email']{
+    text-align: center;
+}
+input[type='age']{
+    text-align: center;
+}
+input[type='region']{
+    text-align: center;
+}
+h2,h4,p{
+    text-align: center;
+}
+strong{
+    padding: 15%;
+}
+button{
+    width:410px;
+    background-color: rgb(16, 69, 16);
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="surveybox">
+    <div class="container">
+
+    <H2>Tree Survey Form</H2>        
+    <p><b>A survey form on the health of the Environment</b></p>
+    <div class="item">
+    <label>Name:</label>
+    <br>
+    <input
+        type="text"
+        placeholder="EnteryourName"
+        name="Username"
+        style="width:400px"
+    />
+    <br>
+    <br>
+    Email:
+    <br><input type="email"placeholder="Enter your Email" name="my email" style="width:400px">
+    <br>
+    <br>
+    Age(optional):
+    <br><input type="Age"placeholder="Enter your Age" name="my age" style="width:400px">
+    <br>
+    <br>
+    Select continent of residence
+    <br><input type="region"placeholder="INDIA" name="my region" style="width:400px">
+    <br>
+    <br>
+    <h4>Choose your prefered gender</h4>
+    <form action="/submit-data">
+
+        <label>Male <input type="radio" name="Gender" value="Male" /></label>
+        <br>
+        <br>
+        <label>Female <input type="radio" name="Gender" value="Female"
+        /></label>
+        <br>
+        <br>
+        <label>Other <input type="radio" name="Gender" value="Other"
+        /></label>
+        <br>
+        <br>
+        <strong>Please select atleast one of the option below:</strong>
+        <br>
+        <ul type="square">
+            <li>I have planted a tree or any other plant</li>
+            <li>I take part in community service for the environment</li>
+            <li>I promise more plant from now on</li>
+        </ul>
+        <br>
+        <br>
+        <strong>Any comments or suggestions</strong>
+        <br>
+        <textarea
+        cols="55"
+        rows="8"
+        placeholder="comments/suggestions">
+        </textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
