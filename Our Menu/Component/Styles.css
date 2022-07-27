@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  background: #faf7f2;
+  background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+  color: rgb(23, 22, 22);
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 15px;
+}
+
+.main-card--container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 500px));
+  grid-gap: 50px;
+  justify-content: space-around;
+}
+
+.card-container {
+  margin: 25px auto 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+  z-index: 1;
+}
+
+.card-body {
+  display: inline-block;
+}
+
+.card-number {
+  margin-top: 15px;
+}
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+}
+
+.card-author {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.card-description-subtle {
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.card-read {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 5px 0 20px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.card-tag-subtle {
+  float: right;
+  margin: 5px 0 0;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.card-tag-subtle:hover {
+  background: #aaa;
+  color: black;
+}
+
+.card-media {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 998px) {
+  .main-card--cointainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    grid-gap: 50px;
+    justify-content: space-around;
+  }
+}
+
+.navbar {
+  padding-top: 40px;
+  text-align: center;
+}
+.btn-group {
+  border-radius: 1rem;
+  text-transform: capitalise;
+}
